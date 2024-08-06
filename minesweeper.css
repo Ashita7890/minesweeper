@@ -1,0 +1,117 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Light gradient background */
+}
+
+/* Container for game info and flag button */
+#game-info-container {
+    margin: 20px auto;
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+}
+
+/* Style for the game info box */
+#game-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for each game info element */
+#game-info div {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Style for the timer */
+#timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for the flag button */
+#flag-button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+    transition: background-color 0.3s ease;
+}
+
+#flag-button:hover {
+    background-color: #ccc; /* Slightly darker on hover */
+}
+
+/* Style for the Minesweeper board */
+#board {
+     display: grid;
+    grid-template-columns: repeat(8, 50px); 
+    grid-gap: 2px;
+    justify-content: center;
+    margin: 0 auto;
+    background: #dfe6e9; /* Light background for the board */
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+}
+
+/* Style for each tile */
+#board div {
+    width: 50px;
+    height: 50px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for tiles */
+    transition: background-color 0.3s ease;
+}
+
+#board div:hover {
+    background-color: #f0f0f0; /* Slightly darker on hover */
+}
+
+/* Style for clicked tiles */
+.tile-clicked {
+    background-color: #ddd;
+    cursor: default;
+}
+
+/* Style for number tiles with colors */
+.x1 { color: blue; }
+.x2 { color: green; }
+.x3 { color: red; }
+.x4 { color: darkblue; }
+.x5 { color: darkred; }
+.x6 { color: darkcyan; }
+.x7 { color: black; }
+.x8 { color: gray; }
+
+/* Style for mine tiles */
+.x-mine {
+    background-color: red;
+    color: white;
+    font-weight: bold; /* Bold font for mines */
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="minesweeper.css">
+</head>
+<body>
+   <h1>Mines: <span id="mines-count">0</span></h1>
+   <div id="timer">Timer </div>
+   <div id="game-info">
+    <div id="mines-count">Mines: 10</div>
+    <div id="flag-count">Flags: 0</div>
+</div>
+    
+   
+   <div id="board">
+
+    </div>
+    <audio id="win-sound" loop>
+        <source src="sounds/win-sound'.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="click-sound">
+        <source src="sounds/click-sound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bomb-sound">
+        <source src="sounds/bomb-sound.mp3" type="audio/mpeg">
+    </audio>
+   <br>
+   <button id="flag-button"> 🚩</button>
+   <script src="minesweeper.js"></script>
+</body>
+</html>
